@@ -1,0 +1,34 @@
+101|Brewcraft Ethiopian Light Roast|Coffee Powders|18.00|/assets/products/ethiopian-roast.png|Single-origin light roast with floral notes. Available in Whole Bean, Fine, Medium, Coarse.
+102|Brewcraft Colombian Medium Roast|Coffee Powders|18.00|/assets/products/colombian-roast.png|Smooth and balanced medium roast. Available in Whole Bean, Fine, Medium, Coarse.
+103|Brewcraft Brazilian Dark Roast|Coffee Powders|18.00|/assets/products/brazilian-roast.png|Rich and intense dark roast. Available in Whole Bean, Fine, Medium, Coarse.
+104|Brewcraft Indian Monsoon Malabar|Coffee Powders|20.00|/assets/products/indian-roast.png|Unique low-acidity bean exposed to monsoon winds. Available in Whole Bean, Fine, Medium, Coarse.
+105|Brewcraft House Blend|Coffee Powders|16.00|/assets/products/house-roast.png|Our signature daily blend. Available in Whole Bean, Fine, Medium, Coarse.
+106|Brewcraft Espresso Blend|Coffee Powders|18.00|/assets/products/espresso-blend.png|Perfectly crafted for espresso shots. Available in Whole Bean, Fine, Medium, Coarse.
+107|Brewcraft Breakfast Blend|Coffee Powders|16.00|/assets/products/breakfast-blend.png|Bright and energizing morning cup. Available in Whole Bean, Fine, Medium, Coarse.
+201|Brewcraft Cold Brew Classic|Ready-to-Drink|5.00|/assets/products/cold-brew.png|Smooth cold brew, ready to drink.
+202|Brewcraft Cold Brew Mocha|Ready-to-Drink|5.50|/assets/products/Mocha.png|Cold brew with a touch of rich chocolate.
+203|Brewcraft Iced Latte|Ready-to-Drink|5.50|/assets/products/iced-latte.png|Creamy iced latte for hot days.
+204|Brewcraft Nitro Cold Brew|Ready-to-Drink|6.00|/assets/products/nitro-brew.png|Nitrogen-infused for a creamy texture.
+301|Brewcraft Ceramic Mug (300ml)|Accessories|12.00|/assets/products/ceramic-mug.jpg|Classic ceramic mug for your daily brew.
+302|Brewcraft Ceramic Mug (450ml)|Accessories|15.00|/assets/products/ceramic.jpg|Extra large mug for serious coffee lovers.
+303|Brewcraft Double-Wall Glass Cup|Accessories|18.00|/assets/products/double-wall.jpg|Keeps coffee hot while staying cool to the touch.
+304|Brewcraft Travel Mug|Accessories|25.00|/assets/products/ss-tubmbler.jpg|Leak-proof travel mug for coffee on the go.
+305|Brewcraft Insulated Stainless Steel Tumbler|Accessories|28.00|/assets/products/ss-tubmbler.jpg|Maintains temperature for hours.
+401|Brewcraft French Press (350ml)|Brewing Tools|30.00|/assets/products/french-press-small.png|Classic immersion brewer for a rich cup.
+402|Brewcraft French Press (600ml)|Brewing Tools|40.00|/assets/products/french-press-large.png|Larger capacity French Press for sharing.
+403|Brewcraft Pour-Over Dripper|Brewing Tools|25.00|/assets/products/drip-coffee.png|V60 Style dripper for precise brewing.
+404|Brewcraft Cold Brew Maker|Brewing Tools|35.00|/assets/products/cold-brew.png|Make smooth cold brew at home easily.
+405|Brewcraft Manual Coffee Grinder|Brewing Tools|45.00|/assets/products/manual-coffee-grinder.jpg|Adjustable ceramic burr grinder.
+406|Brewcraft Digital Coffee Scale|Brewing Tools|35.00|/assets/products/coffee-digital-scale.jpg|Precision scale with timer for perfect brewing.
+407|Brewcraft Measuring Scoop|Brewing Tools|8.00|/assets/products/coffee-measuring-scoop.jpg|Stainless steel scoop for consistent dosing.
+501|Brewcraft Drip Coffee Maker|Coffee Machines|80.00|/assets/products/drip.jpg|Reliable automatic drip brewer.
+502|Brewcraft Capsule Coffee Machine|Coffee Machines|120.00|/assets/products/capsule.jpg|Quick and convenient capsule system.
+503|Brewcraft Espresso Machine – Basic|Coffee Machines|250.00|/assets/products/basic-espresso-machine.jpg|Great entry-level home espresso machine.
+504|Brewcraft Espresso Machine – Pro|Coffee Machines|600.00|/assets/products/complex-espresso-machine.jpg|Professional grade machine for the serious barista.
+601|Brewcraft Coffee Machine Descaler|Accessories|15.00|/assets/products/descaler.jpg|Keep your machine running smoothly.
+602|Brewcraft Cleaning Brush Set|Accessories|12.00|/assets/products/brush-set.jpg|Essential brushes for grinder and machine maintenance.
+701|Brewcraft Starter Coffee Kit|Bundles|50.00|/assets/products/starter-kit.jpg|Includes House Blend, Mug, and Scoop.
+702|Brewcraft Home Barista Kit|Bundles|150.00|/assets/products/home-barista-kit.jpg|French Press, Grinder, Scale, and 2 bags of beans.
+703|Brewcraft Office Coffee Kit|Bundles|100.00|/assets/products/office-kit.jpg|Bulk drip coffee, filters, and cups for the team.
+801|Brewcraft Tote Bag|Accessories|20.00|/assets/products/tote-bag.jpg|Stylish canvas tote for your coffee runs.
+802|Brewcraft Coffee Scoop Keychain|Accessories|5.00|/assets/products/coffee-scoop.jpg|Mini scoop keychain, always be ready.

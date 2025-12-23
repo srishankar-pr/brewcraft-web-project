@@ -1,0 +1,3 @@
+user@example.com|password123|Demo User
+admin@brewcraft.com|admin123|Administrator
+shrishti@example.com|securepass|Shrishti

@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Private Data (Do not commit passwords or user data)
+data/users.txt
+data/orders.txt
+data/contact.txt

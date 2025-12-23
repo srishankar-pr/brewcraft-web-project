@@ -1,0 +1,57 @@
+:root {
+    /* Color Palette - Premium Latte Theme */
+    --color-primary: #3E2723;
+    /* Dark Espresso for headings */
+    --color-secondary: #8D6E63;
+    /* Roasted Bean for secondary buttons/icons */
+    --color-accent: #D7CCC8;
+    /* Milk Foam for subtle backgrounds */
+
+    --color-bg-light: #FAFAF5;
+    /* Paper / Warm White Background */
+    --color-bg-white: #FFFFFF;
+    /* Pure White for Cards */
+
+    --color-text-main: #3E2723;
+    /* Espresso Text */
+    --color-text-muted: #795548;
+    /* Medium Brown Text */
+
+    --color-error: #D32F2F;
+    --color-success: #388E3C;
+
+    /* Shadows & Softness */
+    --shadow-sm: 0 4px 12px rgba(62, 39, 35, 0.05);
+    --shadow-md: 0 8px 24px rgba(62, 39, 35, 0.08);
+    --shadow-lg: 0 16px 40px rgba(62, 39, 35, 0.12);
+
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: 1px solid rgba(62, 39, 35, 0.05);
+    --glass-blur: blur(16px);
+
+    /* Typography - Keeping the Modern Selection */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    /* 8px */
+    --spacing-sm: 1rem;
+    /* 16px */
+    --spacing-md: 1.5rem;
+    /* 24px */
+    --spacing-lg: 3rem;
+    /* 48px */
+    --spacing-xl: 5rem;
+    /* 80px */
+
+    /* BorderRadius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
