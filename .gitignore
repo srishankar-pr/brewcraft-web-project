@@ -9,7 +9,5 @@ package-lock.json
 .DS_Store
 Thumbs.db
 
-# Private Data (Do not commit passwords or user data)
-data/users.txt
-data/orders.txt
-data/contact.txt
+# Development Scripts
+verify_server.js
