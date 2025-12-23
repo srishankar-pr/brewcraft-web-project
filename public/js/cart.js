@@ -36,18 +36,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${item.image}" alt="${item.name}" class="cart-item-img" onerror="this.src='https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=100&q=80'">
                 <div class="cart-item-info">
                     <h4 class="cart-item-title">${item.name}</h4>
-                    <div class="cart-item-price">$${parseFloat(item.price).toFixed(2)}</div>
+                    <div class="cart-item-price">₹${parseFloat(item.price).toFixed(2)}</div>
+            </div>
+            <div class="cart-item-actions">
+                <div class="quantity-selector" style="margin: 0; transform: scale(0.9);">
+                    <button class="qty-btn" onclick="updateCartItem('${item.id}', -1)">-</button>
+                    <input type="text" class="qty-input" value="${item.quantity}" readonly>
+                    <button class="qty-btn" onclick="updateCartItem('${item.id}', 1)">+</button>
                 </div>
-                <div class="cart-item-actions">
-                    <div class="quantity-selector" style="margin: 0; transform: scale(0.9);">
-                        <button class="qty-btn" onclick="updateCartItem('${item.id}', -1)">-</button>
-                        <input type="text" class="qty-input" value="${item.quantity}" readonly>
-                        <button class="qty-btn" onclick="updateCartItem('${item.id}', 1)">+</button>
-                    </div>
-                </div>
-                <div class="cart-item-total">$${itemTotal.toFixed(2)}</div>
-                <button class="remove-btn" onclick="removeCartItem('${item.id}')"><i class="fa-solid fa-trash"></i></button>
-            `;
+            </div>
+            <div class="cart-item-total">₹${itemTotal.toFixed(2)}</div>
+            <button class="remove-btn" onclick="removeCartItem('${item.id}')"><i class="fa-solid fa-trash"></i></button>
+        `;
             cartItemsContainer.appendChild(itemEl);
         });
 
@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateSummary(total) {
-        if (subtotalEl) subtotalEl.textContent = `$${total.toFixed(2)}`;
-        if (totalEl) totalEl.textContent = `$${total.toFixed(2)}`;
+        if (subtotalEl) subtotalEl.textContent = `₹${total.toFixed(2)}`;
+        if (totalEl) totalEl.textContent = `₹${total.toFixed(2)}`;
     }
 
     // Expose helpers to window for onclick handlers

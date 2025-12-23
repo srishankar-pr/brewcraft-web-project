@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 <div class="product-info">
                     <div class="product-cat">${product.category}</div>
                     <a href="product.html?id=${product.id}"><h3 class="product-title">${product.name}</h3></a>
-                    <div class="product-price">$${parseFloat(product.price).toFixed(2)}</div>
+                    <div class="product-price">₹${parseFloat(product.price).toFixed(2)}</div>
                 </div>
             `;
             productGrid.appendChild(card);

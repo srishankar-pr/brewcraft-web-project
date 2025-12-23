@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Calculate Total for Display
     const total = app.state.cart.reduce((sum, item) => sum + (parseFloat(item.price) * item.quantity), 0);
-    document.getElementById('checkoutTotal').textContent = `$${total.toFixed(2)}`;
+    document.getElementById('checkoutTotal').textContent = `₹${total.toFixed(2)}`;
 
     const form = document.getElementById('checkoutForm');
 

@@ -130,7 +130,12 @@ app.post('/api/contact', (req, res) => {
     }
 });
 
-// Start Server
-app.listen(PORT, () => {
-    console.log(`Node.js server running at http://localhost:${PORT}`);
-});
+// Export for Netlify
+module.exports = app;
+
+// Start Server locally (if not imported)
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Node.js server running at http://localhost:${PORT}`);
+    });
+}

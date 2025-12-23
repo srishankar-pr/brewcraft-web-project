@@ -150,7 +150,7 @@
 
             if (currentProduct) {
                 document.getElementById('p-title').textContent = currentProduct.name;
-                document.getElementById('p-price').textContent = `$${parseFloat(currentProduct.price).toFixed(2)}`;
+                document.getElementById('p-price').textContent = `₹${parseFloat(currentProduct.price).toFixed(2)}`;
                 document.getElementById('p-desc').textContent = currentProduct.description || 'No description available.';
                 document.getElementById('p-category').textContent = currentProduct.category;
                 document.getElementById('p-image').src = currentProduct.image;

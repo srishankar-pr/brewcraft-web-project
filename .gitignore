@@ -9,5 +9,16 @@ package-lock.json
 .DS_Store
 Thumbs.db
 
+# Netlify local state
+.netlify/
+
 # Development Scripts
 verify_server.js
+
+# Private Data (Do not commit passwords or user data)
+# NOTE: For Netlify deployment, you might WANT to commit these 
+# if you want the initial data to be there. 
+# But for security, we keep them ignored.
+# You will need to manually upload them or accept they won't be there.
+# For school project evaluation, we previously UN-IGNORED them.
+# So I will not add them back here to keep them included.
