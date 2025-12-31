@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cartItemsContainer = document.querySelector('.cart-items');
     const subtotalEl = document.getElementById('subtotal');
-    const totalEl = document.getElementById('total');
+    const totalEl = document.getElementById('cartTotal');
     const checkoutBtn = document.getElementById('checkoutBtn');
 
     function renderCart() {
@@ -18,17 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             if (checkoutBtn) checkoutBtn.style.display = 'none';
-            updateSummary(0);
+            updateSummary(0, 0);
             return;
         }
 
         if (checkoutBtn) checkoutBtn.style.display = 'block';
 
-        let total = 0;
+        let subtotal = 0;
 
         cart.forEach(item => {
             const itemTotal = parseFloat(item.price) * item.quantity;
-            total += itemTotal;
+            subtotal += itemTotal;
 
             const itemEl = document.createElement('div');
             itemEl.className = 'cart-item fade-in';
@@ -51,11 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
             cartItemsContainer.appendChild(itemEl);
         });
 
-        updateSummary(total);
+        // Discount Logic (Outside the Loop)
+        let total = subtotal;
+        if (subtotal > 1000) {
+            const discount = subtotal * 0.10; // 10% Discount
+            console.log("Discount Applied: " + discount);
+            total = subtotal - discount;
+        }
+
+        updateSummary(subtotal, total);
     }
 
-    function updateSummary(total) {
-        if (subtotalEl) subtotalEl.textContent = `₹${total.toFixed(2)}`;
+    function updateSummary(subtotal, total) {
+        if (subtotalEl) subtotalEl.textContent = `₹${subtotal.toFixed(2)}`;
         if (totalEl) totalEl.textContent = `₹${total.toFixed(2)}`;
     }
 

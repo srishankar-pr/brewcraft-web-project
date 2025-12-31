@@ -12,7 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Calculate Total for Display
-    const total = app.state.cart.reduce((sum, item) => sum + (parseFloat(item.price) * item.quantity), 0);
+    // Calculate Total for Display
+    let total = app.state.cart.reduce((sum, item) => sum + (parseFloat(item.price) * item.quantity), 0);
+
+    // Apply 10% Discount if applicable
+    if (total > 1000) {
+        const discount = total * 0.10;
+        total = total - discount;
+    }
+
     document.getElementById('checkoutTotal').textContent = `₹${total.toFixed(2)}`;
 
     const form = document.getElementById('checkoutForm');

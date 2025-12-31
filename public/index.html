@@ -70,8 +70,7 @@
                 <!-- Card 1: Roasted & Ground -->
                 <a href="shop.html?category=Coffee%20Powders" class="category-card">
                     <div class="category-icon">
-                        <img src="/assets/products/indian-roast.png"
-                            alt="Coffee Powders">
+                        <img src="/assets/products/indian-roast.png" alt="Coffee Powders">
                     </div>
                     <h3 class="category-title">Roasted & Ground<br>Coffee</h3>
                 </a>
@@ -79,8 +78,7 @@
                 <!-- Card 2: Ready to Drink -->
                 <a href="shop.html?category=Ready-to-Drink" class="category-card">
                     <div class="category-icon">
-                        <img src="/assets/products/iced-latte.png"
-                            alt="Ready to Drink">
+                        <img src="/assets/products/iced-latte.png" alt="Ready to Drink">
                     </div>
                     <h3 class="category-title">Ready To<br>Drink</h3>
                 </a>
@@ -88,8 +86,7 @@
                 <!-- Card 3: Brewing Equipment -->
                 <a href="shop.html?category=Brewing%20Tools" class="category-card">
                     <div class="category-icon">
-                        <img src="/assets/products/french-press-large.png"
-                            alt="Brewing Tools">
+                        <img src="/assets/products/french-press-large.png" alt="Brewing Tools">
                     </div>
                     <h3 class="category-title">Brewing<br>Equipment</h3>
                 </a>
@@ -97,35 +94,66 @@
                 <!-- Card 4: Accessories / Recommendations -->
                 <a href="shop.html?category=Coffee%20Machines" class="category-card">
                     <div class="category-icon">
-                        <img src="/assets/products/capsule.jpg"
-                            alt="Machines">
+                        <img src="/assets/products/capsule.jpg" alt="Machines">
                     </div>
                     <h3 class="category-title">Coffee<br>Machines</h3>
                 </a>
             </div>
         </div>
     </section>
+        <style>
+    .special-offer {
+        background-color: #d42426; /* Christmas Red */
+        color: white;
+        padding: 40px;
+        text-align: center;
+        border-radius: 10px;
+        margin: 20px 0;
+        font-family: 'Arial', sans-serif;
+    }
+    .special-offer h2 {
+        margin-top: 0;
+        border-bottom: 2px solid white;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    .offer-details {
+        font-size: 1.2rem;
+        margin-top: 15px;
+    }
+</style>
 
-    <!-- Simple Footer -->
-    <footer style="background: var(--color-primary); color: white; padding: 4rem 0; margin-top: auto;">
-        <div class="container grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
-            <div>
-                <h3 style="color: white;">BREWCRAFT</h3>
-                <p style="opacity: 0.8; max-width: 300px;">Elevating your daily coffee ritual with premium quality
-                    products and sustainable sourcing.</p>
-            </div>
-            <div class="flex" style="gap: 2rem; justify-content: flex-end; align-items: start;">
-                <ul style="opacity: 0.8;">
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
+<!-- New Section -->
+<section class="container">
+    <div class="special-offer">
+        <h2>🎄 Christmas & New Year Special 🎅</h2>
+        <div class="offer-details">
+            <p>Get flat <strong>20% OFF</strong> on all Gift Bundles!</p>
+            <p>Use Code: <strong>BREWYEAR2025</strong></p>
         </div>
-        <div class="container text-center" style="margin-top: 2rem; opacity: 0.5; font-size: 0.8rem;">
-            &copy; 2025 BrewCraft. All rights reserved.
+    </div>
+</section>
+    <div style="text-align: center; margin: 2rem;">
+        <button onclick="togglesection()" class="btn btn-secondary">Toggle Secret Recipe</button>
+        <div id="infosection"
+            style="display:none; margin-top: 1rem; padding: 1rem; border: 1px dashed var(--color-primary);">
+            <h3>☕ Secret Recipe:</h3>
+            <p>1. Grind beans finely.</p>
+            <p>2. Use water at exactly 93°C.</p>
+            <p>3. Brew for 4 minutes.</p>
         </div>
-    </footer>
+    </div>
+
+    <script>
+        function togglesection() {
+            const info = document.getElementById("infosection");
+            if (info.style.display === 'none') {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 

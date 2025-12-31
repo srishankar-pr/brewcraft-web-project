@@ -127,12 +127,21 @@
                             <label>Email</label>
                             <input type="email" id="email" class="form-control" placeholder="Your email" required>
 
+                            <label>Phone</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Your phone number" required>
+
                             <label>Message</label>
                             <textarea id="message" class="form-control" placeholder="How can we help?"
                                 required></textarea>
 
                             <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+
+                            <button type="button" onclick="clearThank()" style="width: 100%;">Clear Form</button>
                         </form>
+                        <div id="thankYou" style="display: none;">
+                            <h2>Thank you for your message!</h2>
+                            <p>We'll get back to you shortly.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,6 +154,12 @@
         const form = document.getElementById('contactForm');
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
+
+            // Validate using the function we added for Question 3
+            if (typeof validateForm === 'function' && !validateForm()) {
+                return;
+            }
+
             const btn = form.querySelector('button');
             const originalText = btn.textContent;
 
@@ -174,6 +189,21 @@
                 btn.disabled = false;
             }
         });
+
+        function clearThank() {
+            // 1. Clear the form
+            document.getElementById('contactForm').reset();
+
+            // 2. Show Thank You Message
+            const thankYouDiv = document.getElementById('thankYou');
+            thankYouDiv.style.display = 'block';
+
+            // 3. Optional: Hide it after 3 seconds so they can submit again if needed
+            setTimeout(() => {
+                thankYouDiv.style.display = 'none';
+            }, 3000);
+        }
+
     </script>
 </body>
 
