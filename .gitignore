@@ -1,9 +1,7 @@
 # Dependencies
 node_modules/
 
-# Data Files (Local/Runtime)
-data/orders.txt
-data/contact.txt
+
 
 
 # Environment variables
