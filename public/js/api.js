@@ -16,6 +16,10 @@ const api = {
     },
 
     async getProducts() {
+        if (window.productsData) {
+            return Promise.resolve(window.productsData);
+        }
+        console.warn('productsData not found, falling back to fetch');
         try {
             const response = await fetch(`${API_BASE}/products`);
             return await response.json();

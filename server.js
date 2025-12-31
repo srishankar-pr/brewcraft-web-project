@@ -25,33 +25,7 @@ const readFileLines = (filename, callback) => {
 
 // API Routes
 
-// GET /api/products
-app.get('/api/products', (req, res) => {
-    readFileLines('products.txt', (err, lines) => {
-        if (err) {
-            console.error(err);
-            return res.status(500).json({ error: 'Failed to read products' });
-        }
 
-        const products = lines.map(line => {
-            const parts = line.split('|');
-            // id|name|category|price|image|description
-            if (parts.length >= 6) {
-                return {
-                    id: parts[0],
-                    name: parts[1],
-                    category: parts[2],
-                    price: parts[3],
-                    image: parts[4],
-                    description: parts[5]
-                };
-            }
-            return null;
-        }).filter(p => p !== null);
-
-        res.json(products);
-    });
-});
 
 // POST /api/login
 app.post('/api/login', (req, res) => {

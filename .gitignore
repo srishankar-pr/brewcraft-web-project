@@ -1,6 +1,10 @@
 # Dependencies
 node_modules/
-package-lock.json
+
+# Data Files (Local/Runtime)
+data/orders.txt
+data/contact.txt
+
 
 # Environment variables
 .env
