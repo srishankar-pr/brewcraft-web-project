@@ -270,6 +270,14 @@ const productsData = [
         "price": "250.00",
         "image": "/assets/products/key-chain.png",
         "description": "Mini scoop keychain, always be ready."
+    },
+    {
+        "id": "999",
+        "name": "Viva Special Blend",
+        "category": "Coffee Powders",
+        "price": "500.00",
+        "image": "/assets/logo.png",
+        "description": "A special blend for the external examination."
     }
 ];
 window.productsData = productsData;

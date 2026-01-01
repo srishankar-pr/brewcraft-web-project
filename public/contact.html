@@ -151,6 +151,31 @@
     <script src="js/api.js"></script>
     <script src="js/app.js"></script>
     <script>
+        function validateForm() {
+            // 1. Get Values
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            // 2. Define Regex Patterns
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            const phoneRegex = /^\d{10}$/; // Exactly 10 digits
+
+            // 3. Validate Email
+            if (!emailRegex.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            // 4. Validate Phone
+            if (!phoneRegex.test(phone)) {
+                alert("Please enter a valid 10-digit mobile number.");
+                return false;
+            }
+
+            // 5. If all good
+            return true;
+        }
+
         const form = document.getElementById('contactForm');
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
