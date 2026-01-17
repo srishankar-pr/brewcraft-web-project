@@ -1,13 +1,13 @@
 :root {
     /* Color Palette - Premium Latte Theme */
-    --color-primary: #3E2723;
+    --color-primary: #3e2723;
     /* Dark Espresso for headings */
     --color-secondary: #8D6E63;
     /* Roasted Bean for secondary buttons/icons */
     --color-accent: #D7CCC8;
     /* Milk Foam for subtle backgrounds */
 
-    --color-bg-light: #FAFAF5;
+    --color-bg-light: #ffffff;
     /* Paper / Warm White Background */
     --color-bg-white: #FFFFFF;
     /* Pure White for Cards */
